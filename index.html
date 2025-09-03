@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Annisa Day!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    button {
+      background: #ff6f91;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      color: #fff;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background: #ff3f6c;
+      transform: scale(1.05);
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+
+    #mainContent {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ff3f6c;
+      margin-top: 20px;
+    }
+    h3 {
+      font-size: 2.5rem;
+      color: #ff3f6c;
+      margin-top: 20px;
+    }
+
+    h2 {
+      margin-top: 20px;
+      color: #444;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+
+    .slideshow {
+      margin: 30px 0;
+      position: relative;
+    }
+
+    .slideshow img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+    }
+
+    #caption {
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    .hug-message {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-top: 20px;
+      background: #ffe0e9;
+      padding: 15px;
+      border-radius: 15px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    /* Animasi */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    #typingText {
+      font-family: "Courier New", monospace;
+      font-size: 1.2rem;
+      margin: 20px 0;
+      color: #444;
+      min-height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Tombol trigger -->
+  <button id="startBtn">✨ Are you ready?? ✨</button>
+
+  <!-- Kontainer utama -->
+  <div id="mainContent" style="display: none;">
+    <div id="typingText"></div>
+    <h1>🎉 ~WUHUUUWWW~ </p> </h1>
+      <h3><p>Happy Birthday, Nisss! 🎂</h3>
+    <p>Melangkah 1/4 abad bukan hal yang menakutkan, itu justru awal dari banyak petualangan baik!! 💖</p>
+
+    <!-- <div class="slideshow">
+      <img id="photo" src="photo1.jpg" alt="Memori" />
+      <p id="caption">We Good in This Picture <br> One of my favorite~</p>
+    </div> -->
+    <div class="slideshow">
+  <img id="photo" src="photos1.jpg" alt="Memori" />
+  <video id="surpriseVideo" class="hidden" width="100%" controls>
+    <source src="vid1.mp4" type="video/mp4">
+    Browser kamu tidak mendukung video.
+  </video>
+  <p id="caption">We Good in This Picture <br> One of my favorite~</p>
+</div>
+
+
+    <!-- Next button -->
+    <div id="nextPart" style="display:none;">
+      <button id="nextBtn">Haii mbaa, aku muncull 🎈</button>
+    </div>
+
+    <!-- Gift section -->
+    <div id="giftSection" class="hidden">
+      <h2>🎁 Little Gift for You</h2>
+      <p id="hiddenWish" class="hidden">Hai mba virgo, selamat menikmati setahun dengan tingkat kematangan otak yang sudah dangat matang (penelitiannya sih gituww)... mari nikmatin umur 1/4 abad ituu, sedih dan bahagia semoga berada dalam rentang rasa yang tepat🎈</p>
+
+      <div id="quoteSlide" class="hidden">
+        <h2>✨ Little Notes Just for You</h2>
+        <p id="quoteText" class="quote-text"></p>
+      </div>
+
+      <div id="hugSection" class="hidden">
+        <p class="hug-message">bahagia sepanjang masa</p>
+      </div>
+    </div>
+
+    <audio id="bgMusic" src="DISKORIA.mp3" loop hidden></audio>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

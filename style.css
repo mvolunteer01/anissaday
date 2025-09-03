@@ -1,0 +1,157 @@
+body {
+  background: #fff0f5;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 40px;
+  color: #880e4f;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.3em;
+  margin-top: 0;
+}
+
+/*.slideshow img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-top: 20px;
+}*/
+/*.slideshow {
+  margin: 40px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.slideshow img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#caption {
+  margin-top: 15px;
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #6a1b9a;
+  padding: 10px 20px;
+  word-wrap: break-word;
+  white-space: pre-line;
+  text-align: justify;
+}*/
+
+.slideshow {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#photo {
+  width: 40%; /* Ubah persentase sesuai kebutuhan, misal 40%, 50% */
+  max-width: 300px; /* Batas maksimal supaya responsif */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+#caption {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #333;
+  white-space: pre-line;
+}
+
+
+
+
+button {
+  margin-top: 30px;
+  padding: 12px 20px;
+  font-size: 1em;
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #d81b60;
+}
+
+.hidden {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #4a148c;
+}
+
+.slide {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  font-size: 1.4em;
+  color: #ad1457;
+  margin-top: 30px;
+}
+
+.slide.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#quoteSlide {
+  margin-top: 40px;
+  font-size: 1.3em;
+  color: #6a1b9a;
+  animation: fadeIn 1s ease-in;
+}
+
+.quote-text {
+  font-style: italic;
+  margin-top: 10px;
+  min-height: 60px;
+}
+
+#hugSection {
+  margin-top: 40px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.hug-img {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.hug-message {
+  font-size: 1.2em;
+  color: #880e4f;
+  margin-top: 15px;
+  line-height: 1.5em;
+  font-weight: 500;
+  white-space: pre-line;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#videoContainer video {
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+
+
